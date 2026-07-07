@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+*.log
+preview.html
+build-preview.js
+build-backup.js

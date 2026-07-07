@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dewayu-utama-land.vercel.app/sitemap.xml
