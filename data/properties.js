@@ -392,6 +392,59 @@ module.exports = [
       "General Information",
     ],
   },
+  {
+    slug: "tibubeneng-canggu",
+    type: "land",
+    status: "For Sale",
+    featured: true,
+    title: "Tibubeneng Land — Canggu",
+    locationShort: "Tibubeneng, Badung",
+    location: "Tibubeneng, Badung, Bali",
+    region: "Badung",
+    // No external Vercel page yet — build.js generates a full page on this domain at /land/tibubeneng-canggu/
+    price: { display: "IDR 9,647,500,000", secondary: "≈ USD $590,000", note: "Freehold (SHM)" },
+    specs: {
+      landSize: "1,135 m² (11.35 are)",
+      title: "Freehold (SHM)",
+    },
+    tagline: "Strategic freehold parcel in the heart of Canggu's Tibubeneng — surrounded by established villas, ready to develop",
+    metaDescription: "1,135 m² freehold (SHM) land for sale in Tibubeneng, Canggu, Bali. Strategic development parcel surrounded by established villa communities. IDR 9,647,500,000.",
+    description: [
+      "A 1,135 m² (11.35 are) freehold parcel in Tibubeneng — one of Canggu's most established and fast-appreciating neighbourhoods, minutes from Berawa, Echo Beach and the wider Canggu lifestyle hub.",
+      "Held under a clean SHM freehold title and set among a mature pocket of villas, boutique developments and rice-field frontage, this is a rare mid-size development plot in an area where raw land rarely comes to market. Suited to a villa complex, boutique development, or private estate.",
+      "Buyers intending to build are advised to independently verify zoning and permit requirements (KKPR / PBG) and confirm the SHM boundary via a licensed surveyor before purchase — standard practice for development land in Bali, and something we're happy to help coordinate.",
+    ],
+    features: [
+      "1,135 m² (11.35 are) total land",
+      "Clean freehold SHM title",
+      "Prime Tibubeneng / Canggu location",
+      "Surrounded by established villa communities",
+      "Suited to villa complex or boutique development",
+      "Rare mid-size development parcel in a tightly-held area",
+    ],
+    gallery: [
+      { src: "/assets/land/tibubeneng/aerial-plot.jpg", alt: "Aerial view of the Tibubeneng land parcel among established villas" },
+      { src: "/assets/land/tibubeneng/aerial-wide.jpg", alt: "Wide aerial view of the Tibubeneng plot and surrounding neighbourhood" },
+      { src: "/assets/land/tibubeneng/aerial-context.jpg", alt: "Aerial context view showing rice fields and villa developments around the parcel" },
+    ],
+    locationSection: {
+      heading: "In the heart of Canggu's Tibubeneng",
+      text: "Tibubeneng sits at the centre of Canggu's growth — a blend of rice-field pockets and established villa communities, walking distance to cafés, beach clubs and Berawa's amenities. Land of this size rarely becomes available this close to the action.",
+      distances: [
+        { place: "Berawa Beach", time: "~10 min drive" },
+        { place: "Echo Beach", time: "~12 min drive" },
+        { place: "Canggu centre", time: "~10 min drive" },
+        { place: "Seminyak", time: "~20 min drive" },
+        { place: "Ngurah Rai Airport", time: "~35–45 min drive" },
+      ],
+    },
+    enquiryOptions: [
+      "Land Enquiry",
+      "Investment / Development Partnership",
+      "Pricing & Negotiation",
+      "General Information",
+    ],
+  },
 
   // ==========================================================
   // VILLA + LAND PACKAGES
@@ -491,8 +544,8 @@ module.exports = [
       "Flexible monthly terms",
     ],
     gallery: [
-      { src: "/assets/villas/villa-kodi/rooftop-terrace.jpg", alt: "Rooftop bar terrace with lounge seating and city views" },
       { src: "/assets/villas/villa-kodi/pool-night.jpg", alt: "Private pool illuminated at night with tropical garden" },
+      { src: "/assets/villas/villa-kodi/rooftop-terrace.jpg", alt: "Rooftop bar terrace with lounge seating and city views" },
       { src: "/assets/villas/villa-kodi/bedroom-pool-view.jpg", alt: "Bedroom with brick feature wall opening to the pool" },
       { src: "/assets/villas/villa-kodi/living-room.jpg", alt: "Open-plan living area with green sofa" },
       { src: "/assets/villas/villa-kodi/kitchen.jpg", alt: "Kitchen with concrete island and exposed brick wall" },

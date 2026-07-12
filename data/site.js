@@ -1,5 +1,5 @@
 // ============================================================
-// DEWAYU UTAMA LAND — Site configuration
+// LEGACY LAND BALI — Site configuration
 // Edit this file to change brand-wide settings, then run:
 //   node build.js
 // ============================================================
@@ -9,7 +9,7 @@ const logo = require("./logo.js");
 
 module.exports = {
   brand: {
-    name: "Dewayu Utama Land",
+    name: "Legacy Land Bali",
     tagline: "Premium Bali Real Estate",
     footerDesc: "luxury villas, land sales and villa-and-land packages across Bali, guided through a clear and legal process.",
     logo: logo,       // real brand badge, embedded as base64
@@ -31,7 +31,7 @@ module.exports = {
   },
 
   seo: {
-    defaultTitle: "Dewayu Utama Land — Premium Bali Villas, Land & Investment Packages",
+    defaultTitle: "Legacy Land Bali — Premium Bali Villas, Land & Investment Packages",
     defaultDescription:
       "Curated real estate opportunities in Bali — private villas, strategic land holdings and complete villa-and-land packages, guided through a clear and legal process.",
     ogImage:
@@ -40,7 +40,7 @@ module.exports = {
 
   hero: {
     // Homepage hero background — replace with your best real photo
-    image: ph("Dewayu Utama Land", "Premium Bali Real Estate", "asri", 1920, 1080),
+    image: ph("Legacy Land Bali", "Premium Bali Real Estate", "asri", 1920, 1080),
     kicker: "Premium Bali Real Estate",
     headline: "Premium Bali Villas, Land & Investment Packages",
     subheadline:
@@ -50,7 +50,7 @@ module.exports = {
   about: {
     heading: "A land company built on clarity",
     body: [
-      "Dewayu Utama Land is a Bali-based real estate company specialising in premium villas, strategic land parcels and complete villa-and-land packages across the island's most resilient locations.",
+      "Legacy Land Bali is a Bali-based real estate company specialising in premium villas, strategic land parcels and complete villa-and-land packages across the island's most resilient locations.",
       "We work a deliberately small, curated portfolio. Every listing we represent is inspected, documented and priced honestly — so what you see is what you buy. From first enquiry to notarised handover, we guide the entire process in plain language, with full legal transparency at every step.",
       "Whether you are an investor seeking genuine rental yield, a family looking for a Bali base, or a developer securing land — we respond personally, and we respond fast.",
     ],
@@ -129,7 +129,7 @@ module.exports = {
   // "List your property with us" — paid listing service.
   listWithUs: {
     kicker: "Sell With Us",
-    heading: "List your Bali property with Dewayu Utama Land",
+    heading: "List your Bali property with Legacy Land Bali",
     intro: "Have a villa or land parcel to sell? We market a small, curated set of properties to serious, qualified buyers — presented to the same premium standard you see across this site.",
     body: [
       "Your listing gets a dedicated, SEO-ready page, professional presentation, and direct exposure to our enquiry pipeline — with every lead handled personally and confidentially.",
@@ -137,7 +137,7 @@ module.exports = {
     ],
     included: [
       "Dedicated listing page with photo gallery and full details",
-      "Premium presentation consistent with the Dewayu Utama Land brand",
+      "Premium presentation consistent with the Legacy Land Bali brand",
       "Featured placement on the homepage and portfolio",
       "Direct WhatsApp and enquiry-form leads sent straight to you",
       "Honest guidance on pricing, title and legal readiness",

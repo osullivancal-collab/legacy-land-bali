@@ -314,7 +314,7 @@ ${body}
   const formOptionsContact = lang === "id"
     ? [ui.form.rentalEnquiry, ui.form.villaEnquiry, ui.form.landEnquiry, ui.form.packageEnquiry, ui.form.bookInspection, ui.form.sellingProperty, ui.form.generalEnquiry]
     : ["Rental Enquiry", "Villa Enquiry", "Land Enquiry", "Villa + Land Package", "Book an Inspection", "Selling a Property", "General Enquiry"];
-  const enquirySubject = lang === "id" ? "Pertanyaan baru — situs Dewayu Utama Land" : "New enquiry — Dewayu Utama Land website";
+  const enquirySubject = lang === "id" ? "Pertanyaan baru — situs Legacy Land Bali" : "New enquiry — Legacy Land Bali website";
 
   /* ---------------- HOME PAGE ---------------- */
   function homePage() {
@@ -336,8 +336,8 @@ ${body}
         <span class="hero-jump-label">${lang === "id" ? "Lompat ke bagian" : "Jump to a section"}</span>
         <div class="hero-jump-grid">
           <a href="#villas">${esc(ui.nav.villas)}</a>
-          <a href="#rentals">${esc(ui.nav.rentals)}</a>
           <a href="#land">${esc(ui.nav.land)}</a>
+          <a href="#rentals">${esc(ui.nav.rentals)}</a>
           <a href="#packages">${esc(ui.nav.packages)}</a>
         </div>
       </nav>
@@ -356,8 +356,8 @@ ${body}
     </div>
   </section>
 
-  ${typeSection("rental", { sand: true })}
-  ${typeSection("land")}
+  ${typeSection("land", { sand: true })}
+  ${typeSection("rental")}
   ${typeSection("package", { sand: true })}
   ${listWithUsBand()}
 

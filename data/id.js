@@ -9,7 +9,7 @@ module.exports = {
   },
 
   seo: {
-    defaultTitle: "Dewayu Utama Land — Villa Premium Bali, Tanah & Paket Investasi",
+    defaultTitle: "Legacy Land Bali — Villa Premium Bali, Tanah & Paket Investasi",
     defaultDescription: "Properti real estat pilihan di Bali — dari villa eksklusif hingga tanah strategis dan paket villa-dan-tanah lengkap, dengan proses yang jelas dan legal.",
   },
 
@@ -33,7 +33,7 @@ module.exports = {
   about: {
     heading: "Sebuah perusahaan tanah yang dibangun atas kejelasan",
     body: [
-      "Dewayu Utama Land adalah perusahaan real estat berbasis Bali yang mengkhususkan diri dalam villa premium, bidang tanah strategis dan paket villa-dan-tanah lengkap di seluruh lokasi paling tahan lama di pulau itu.",
+      "Legacy Land Bali adalah perusahaan real estat berbasis Bali yang mengkhususkan diri dalam villa premium, bidang tanah strategis dan paket villa-dan-tanah lengkap di seluruh lokasi paling tahan lama di pulau itu.",
       "Kami bekerja dengan portofolio yang sengaja kecil dan dikurasi. Setiap listing yang kami wakili telah diperiksa, didokumentasikan dan dihargai dengan jujur — jadi apa yang Anda lihat adalah apa yang Anda beli. Dari pertanyaan pertama hingga penyerahan yang dinotarisi, kami memandu seluruh proses dalam bahasa yang jelas, dengan transparansi hukum penuh di setiap langkah.",
       "Baik Anda seorang investor yang mencari hasil penyewaan asli, keluarga yang mencari basis Bali, atau pengembang yang mengamankan tanah — kami merespons secara pribadi, dan kami merespons dengan cepat.",
     ],
@@ -108,7 +108,7 @@ module.exports = {
 
   listWithUs: {
     kicker: "Jual Bersama Kami",
-    heading: "Daftarkan properti Bali Anda dengan Dewayu Utama Land",
+    heading: "Daftarkan properti Bali Anda dengan Legacy Land Bali",
     intro: "Memiliki villa atau bidang tanah untuk dijual? Kami memasarkan serangkaian properti yang kecil dan dikurasi kepada pembeli yang serius dan memenuhi syarat — disajikan dengan standar premium yang sama yang Anda lihat di seluruh situs ini.",
     body: [
       "Listing Anda mendapatkan halaman dedicated yang siap SEO, presentasi profesional, dan eksposur langsung ke pipeline pertanyaan kami — dengan setiap prospek ditangani secara pribadi dan rahasia.",
@@ -116,7 +116,7 @@ module.exports = {
     ],
     included: [
       "Halaman listing dedicated dengan galeri foto dan detail lengkap",
-      "Presentasi premium konsisten dengan merek Dewayu Utama Land",
+      "Presentasi premium konsisten dengan merek Legacy Land Bali",
       "Penempatan unggulan di beranda dan portofolio",
       "Prospek pertanyaan WhatsApp dan formulir langsung dikirim kepada Anda",
       "Panduan jujur tentang penetapan harga, judul dan kesiapan hukum",
