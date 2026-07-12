@@ -23,7 +23,7 @@ module.exports = {
   contact: {
     whatsapp: "+62 859 6704 2230",
     whatsappLink: "https://wa.me/6285967042230",
-    email: "info@dewayuutamaland.com",   // ← update to your real enquiry email
+    email: "",   // ← add your real enquiry email here when you have one; left blank shows WhatsApp only
     // Formspree endpoint for the enquiry forms.
     // Create a form at https://formspree.io and paste its endpoint here:
     formspreeEndpoint: "https://formspree.io/f/xdarbbnj",

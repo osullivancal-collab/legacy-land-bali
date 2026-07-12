@@ -146,7 +146,7 @@ ${body}
           <h3>${esc(ui.footer.contact)}</h3>
           <ul>
             <li><a href="${site.contact.whatsappLink}" target="_blank" rel="noopener">WhatsApp ${esc(site.contact.whatsapp)}</a></li>
-            <li><a href="mailto:${site.contact.email}">${esc(site.contact.email)}</a></li>
+            ${site.contact.email ? `<li><a href="mailto:${site.contact.email}">${esc(site.contact.email)}</a></li>` : ""}
             <li>${esc(site.contact.location)}</li>
           </ul>
         </div>
@@ -397,7 +397,7 @@ ${body}
           ${ctaWhatsApp("btn btn-wa", ui.buttons.messageWhatsapp)}
           <a class="btn btn-outline on-dark" href="${baseUrl}/villas/">${esc(ui.buttons.browseProperties)}</a>
         </div>
-        <p class="meta">WhatsApp ${esc(site.contact.whatsapp)} · ${esc(site.contact.email)}<br>${esc(site.pages.home.allEnquiries)}</p>
+        <p class="meta">WhatsApp ${esc(site.contact.whatsapp)}${site.contact.email ? " · " + esc(site.contact.email) : ""}<br>${esc(site.pages.home.allEnquiries)}</p>
       </div>
       ${enquiryForm({ subjectLine: enquirySubject, options: formOptionsGeneral, propertySlug: "" })}
     </div>
@@ -601,7 +601,7 @@ ${body}
         <div class="cta-row">
           ${ctaWhatsApp("btn btn-wa", C.messageWhatsApp)}
         </div>
-        <p class="meta">WhatsApp ${esc(site.contact.whatsapp)}<br>${esc(site.contact.email)}<br>${esc(site.contact.location)}</p>
+        <p class="meta">WhatsApp ${esc(site.contact.whatsapp)}${site.contact.email ? "<br>" + esc(site.contact.email) : ""}<br>${esc(site.contact.location)}</p>
       </div>
       ${enquiryForm({ subjectLine: enquirySubject, options: formOptionsContact, propertySlug: "" })}
     </div>
@@ -656,7 +656,7 @@ ${body}
         <div class="cta-row">
           ${ctaWhatsApp("btn btn-wa", ui.buttons.messageWhatsapp)}
         </div>
-        <p class="meta">WhatsApp ${esc(site.contact.whatsapp)} · ${esc(site.contact.email)}</p>
+        <p class="meta">WhatsApp ${esc(site.contact.whatsapp)}${site.contact.email ? " · " + esc(site.contact.email) : ""}</p>
       </div>
       ${enquiryForm({ subjectLine: lang === "id" ? "Jual bersama kami — pengajuan properti" : "List with us — property submission", options: l.formOptions, propertySlug: "list-with-us" })}
     </div>
