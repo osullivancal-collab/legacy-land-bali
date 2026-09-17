@@ -720,6 +720,28 @@ ${body}
       </div>
     </div>
   </section>
+  ${p.projectFacts ? `
+  <section class="section sand">
+    <div class="container">
+      <div class="section-head reveal">
+        ${kori(lang === "id" ? "Ikhtisar Proyek" : "Project Overview")}
+        <h2>${esc(p.projectFacts.heading)}</h2>
+        ${p.projectFacts.text ? `<p>${esc(p.projectFacts.text)}</p>` : ""}
+      </div>
+      ${distancesList(p.projectFacts.facts)}
+    </div>
+  </section>` : ""}
+  ${p.floorPlan ? `
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        ${kori(lang === "id" ? "Denah" : "Floor Plan")}
+        <h2>${esc(p.floorPlan.heading)}</h2>
+        ${p.floorPlan.text ? `<p>${esc(p.floorPlan.text)}</p>` : ""}
+      </div>
+      <img class="reveal" src="${p.floorPlan.image}" alt="${esc(p.floorPlan.heading)}" loading="lazy" style="width:100%;height:auto;border:1px solid var(--line)">
+    </div>
+  </section>` : ""}
   ${p.locationSection ? `
   <section class="section sand">
     <div class="container">
