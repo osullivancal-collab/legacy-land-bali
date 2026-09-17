@@ -678,6 +678,7 @@ ${body}
   function propertyDetailPage(p) {
     const urgent = /urgent/i.test(p.status);
     const heroImage = p.gallery && p.gallery[0] ? p.gallery[0].src : null;
+    const carouselGallery = heroImage ? p.gallery.slice(1) : p.gallery;
     const body = `
   <section class="page-hero${heroImage ? " has-image" : ""}"${heroImage ? ` style="background-image:url('${heroImage}')"` : ""}>
     <div class="container">
@@ -690,13 +691,13 @@ ${body}
     <div class="container">
       <div class="carousel" aria-label="${esc(p.title)} photos" style="margin-bottom:2.5rem">
         <span class="status-flag${urgent ? " urgent" : ""}">${esc(p.status)}</span>
-        <span class="count">1 / ${p.gallery.length}</span>
+        <span class="count">1 / ${carouselGallery.length}</span>
         <div class="track">
-          ${p.gallery.map((g) => `<div class="slide"><img src="${g.src}" alt="${esc(g.alt)}" loading="lazy"></div>`).join("\n          ")}
+          ${carouselGallery.map((g) => `<div class="slide"><img src="${g.src}" alt="${esc(g.alt)}" loading="lazy"></div>`).join("\n          ")}
         </div>
         <button class="c-btn c-prev" aria-label="${esc(ui.prev)}">←</button>
         <button class="c-btn c-next" aria-label="${esc(ui.next)}">→</button>
-        <div class="c-dots">${p.gallery.map((_, i) => `<button aria-label="${esc(ui.photo)} ${i + 1}"></button>`).join("")}</div>
+        <div class="c-dots">${carouselGallery.map((_, i) => `<button aria-label="${esc(ui.photo)} ${i + 1}"></button>`).join("")}</div>
       </div>
       <div class="about-grid">
         <div class="prose reveal">
