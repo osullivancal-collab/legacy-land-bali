@@ -23,9 +23,10 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
 
 body {
+  overflow-x: hidden;
   font-family: "Figtree", system-ui, sans-serif;
   font-size: 17px;
   line-height: 1.7;
@@ -361,7 +362,8 @@ h3 { font-size: 1.25rem; }
   display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
   padding: 0.85rem 0.2rem; border-bottom: 1px solid var(--line);
 }
-.distances .d .t { font-family: "Marcellus", serif; color: var(--gold-deep); white-space: nowrap; }
+.distances .d span:first-child { flex: 1 1 auto; min-width: 0; }
+.distances .d .t { font-family: "Marcellus", serif; color: var(--gold-deep); text-align: right; flex: 0 1 auto; min-width: 0; }
 .map-embed { border: 1px solid var(--line); aspect-ratio: 4 / 3; }
 .map-embed iframe { width: 100%; height: 100%; border: 0; display: block; }
 .nearby { margin-top: 1.6rem; }
