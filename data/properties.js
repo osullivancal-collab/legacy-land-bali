@@ -508,6 +508,64 @@ module.exports = [
       "General Enquiry",
     ],
   },
+  {
+    slug: "kira-tropical-loft-bali",
+    type: "package",
+    status: "For Sale",
+    featured: true,
+    title: "Kira Tropical Loft — Bali",
+    locationShort: "Kerobokan, Bali",
+    location: "Kerobokan, Badung, Bali",
+    region: "Kerobokan",
+    // No external page yet — build.js generates a full page on this domain at /packages/kira-tropical-loft-bali/
+    price: { display: "USD $75,000", secondary: "≈ IDR 1,200,000,000", note: "30-year leasehold" },
+    specs: {
+      bedrooms: 1,
+      bathrooms: 1,
+      landSize: "50 m²",
+      buildSize: "48 m²",
+      title: "Leasehold (30 years)",
+      extra: ["Private Pool", "Fully Furnished"],
+    },
+    tagline: "Smart living in a tropical paradise — a modern 1-bedroom loft with a private pool in the heart of Kerobokan",
+    metaDescription: "Kira Tropical Loft, Kerobokan — 1-bedroom tropical loft for sale from USD 75,000. Private pool, modern design, 50 m² land, 48 m² building, 30-year leasehold, minutes to Seminyak and Canggu.",
+    description: [
+      "Kira Tropical Loft is a boutique row of architect-designed tropical lofts in Kerobokan, built for smart, comfortable living and genuine investment upside. Each 1-bedroom loft is finished with warm timber detailing, a soaring double-height living space and a private plunge pool tucked into its own courtyard.",
+      "Upstairs, an open-plan loft bedroom looks down over the living and dining area through a glass-and-timber balustrade — a compact footprint that lives large. Land is 50 m² with 48 m² of building, held on a 30-year leasehold with legality fully arranged, in a location minutes from Seminyak, Canggu and the beach.",
+    ],
+    features: [
+      "1 bedroom, 1 bathroom loft layout",
+      "Private plunge pool",
+      "Modern tropical design",
+      "Premium finishing throughout",
+      "Land 50 m² / Building 48 m²",
+      "Secure legality — 30-year leasehold",
+      "Great investment potential",
+      "Minutes to Seminyak and Canggu",
+      "Minutes to the beach",
+    ],
+    gallery: [
+      { src: "/assets/packages/kira-tropical-loft/exterior-cutaway-pool.jpg", alt: "Kira Tropical Loft cross-section — private pool, living area and loft bedroom" },
+      { src: "/assets/packages/kira-tropical-loft/exterior-cutaway-dining.jpg", alt: "Kira Tropical Loft cross-section — dining area and open loft bedroom with balcony" },
+      { src: "/assets/packages/kira-tropical-loft/interior-staircase.jpg", alt: "Kira Tropical Loft living area with timber staircase and built-in TV unit" },
+    ],
+    locationSection: {
+      heading: "Prime Kerobokan location",
+      text: "A quiet residential pocket of Kerobokan with easy access to Bali's most popular lifestyle corridors — Seminyak, Canggu and the beach are all minutes away.",
+      distances: [
+        { place: "Seminyak", time: "10 min drive" },
+        { place: "Canggu", time: "15 min drive" },
+        { place: "Nearest beach", time: "10 min drive" },
+      ],
+    },
+    enquiryOptions: [
+      "Request More Info",
+      "Request Floor Plans",
+      "Book a Site Visit",
+      "Pricing & Negotiation",
+      "General Enquiry",
+    ],
+  },
   // ==========================================================
   // VILLA RENTALS
   // ==========================================================
