@@ -677,8 +677,9 @@ ${body}
      SEO-indexed page hosted on this domain at /<type>/<slug>/. */
   function propertyDetailPage(p) {
     const urgent = /urgent/i.test(p.status);
+    const heroImage = p.gallery && p.gallery[0] ? p.gallery[0].src : null;
     const body = `
-  <section class="page-hero">
+  <section class="page-hero${heroImage ? " has-image" : ""}"${heroImage ? ` style="background-image:url('${heroImage}')"` : ""}>
     <div class="container">
       ${kori(p.locationShort)}
       <h1>${esc(p.title)}</h1>
