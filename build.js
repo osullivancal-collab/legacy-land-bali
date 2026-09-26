@@ -799,7 +799,7 @@ ${body}
 /* ---------------- sitemap & robots (both languages) ---------------- */
 function sitemap() {
   const routes = ["/", "/rentals/", "/villas/", "/land/", "/packages/", "/properties/", "/about/", "/legal-process/", "/list-with-us/", "/contact/"];
-  const slugMap = { villa: "villas", land: "land", package: "packages" };
+  const slugMap = { villa: "villas", land: "land", package: "packages", rental: "rentals" };
   properties.filter((p) => !p.vercelUrl).forEach((p) => routes.push(`/${slugMap[p.type]}/${p.slug}/`));
   const urls = [];
   for (const u of routes) {
