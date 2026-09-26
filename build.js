@@ -699,6 +699,7 @@ ${body}
         <button class="c-btn c-next" aria-label="${esc(ui.next)}">→</button>
         <div class="c-dots">${carouselGallery.map((_, i) => `<button aria-label="${esc(ui.photo)} ${i + 1}"></button>`).join("")}</div>
       </div>
+      ${p.externalGallery ? `<div class="section-more" style="margin-top:-1.8rem;margin-bottom:2rem"><a class="more-link" href="${esc(p.externalGallery.url)}" target="_blank" rel="noopener">${esc(p.externalGallery.label)}</a></div>` : ""}
       <div class="about-grid">
         <div class="prose reveal">
           <div style="font-family:var(--font-serif,serif);font-size:1.6rem;color:var(--gold-deep);margin-bottom:.3rem">${esc(p.price.display)}</div>
@@ -706,9 +707,13 @@ ${body}
           <div class="quick" style="margin-bottom:1.5rem">${quickSpecs(p)}</div>
           ${p.description.map((t) => `<p>${esc(t)}</p>`).join("\n          ")}
           <h3 style="margin:1.6rem 0 0.8rem;color:var(--gold-deep)">${lang === "id" ? "Fitur" : "Features"}</h3>
-          <ul class="bullet-list">
+          ${typeof p.features[0] === "object"
+            ? `<div class="feature-grid">
+            ${p.features.map((f, i) => `<div class="feature reveal"><span class="num">${String(i + 1).padStart(2, "0")}</span><h3>${esc(f.title)}</h3><p>${esc(f.text)}</p></div>`).join("\n            ")}
+          </div>`
+            : `<ul class="bullet-list">
             ${p.features.map((f) => `<li>${esc(f)}</li>`).join("\n            ")}
-          </ul>
+          </ul>`}
         </div>
         <div class="reveal">
           <div class="acq" style="border-top-width:3px">
@@ -744,6 +749,19 @@ ${body}
       <img class="reveal" src="${p.floorPlan.image}" alt="${esc(p.floorPlan.heading)}" loading="lazy" style="width:100%;height:auto;border:1px solid var(--line)">
     </div>
   </section>` : ""}
+  ${p.investment ? `
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        ${kori(lang === "id" ? "Peluang Investasi" : "Investment Case")}
+        <h2>${esc(p.investment.heading)}</h2>
+        ${p.investment.intro ? `<p>${esc(p.investment.intro)}</p>` : ""}
+      </div>
+      <ul class="bullet-list">
+        ${p.investment.bullets.map((b) => `<li>${esc(b)}</li>`).join("\n        ")}
+      </ul>
+    </div>
+  </section>` : ""}
   ${p.locationSection ? `
   <section class="section sand">
     <div class="container">
@@ -752,7 +770,12 @@ ${body}
         <h2>${esc(p.locationSection.heading)}</h2>
         <p>${esc(p.locationSection.text)}</p>
       </div>
-      ${distancesList(p.locationSection.distances)}
+      ${p.locationSection.mapEmbed
+        ? `<div class="loc-grid">
+        ${distancesList(p.locationSection.distances)}
+        <div class="map-embed reveal"><iframe src="${esc(p.locationSection.mapEmbed)}" loading="lazy" allowfullscreen title="${esc(p.title)} map"></iframe></div>
+      </div>`
+        : distancesList(p.locationSection.distances)}
     </div>
   </section>` : ""}
   <section class="section dark">
@@ -814,4 +837,4 @@ buildLang("en");
 buildLang("id");
 write("en", "sitemap.xml", sitemap());
 write("en", "robots.txt", `User-agent: *\nAllow: /\nSitemap: ${siteEn.domain}/sitemap.xml\n`);
-console.log(`\nBuilt English (/) and Indonesian (/id/) — 9 pages each, listings link out to the original Vercel pages.`);
+console.log(`\nBuilt English (/) and Indonesian (/id/) — 9 pages each. Listings without a vercelUrl get their own page on this domain; the rest link out to their existing Vercel pages.`);
