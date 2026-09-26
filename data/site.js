@@ -18,7 +18,7 @@ module.exports = {
 
   // The production domain — used for canonical URLs, sitemap and Open Graph.
   // Change this to your final domain before deploying.
-  domain: "https://dewayu-utama-land.vercel.app",
+  domain: "https://legacylandbali.com",
 
   contact: {
     whatsapp: "+62 859 6704 2230",

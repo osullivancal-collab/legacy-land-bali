@@ -22,9 +22,9 @@ every future change I make gets deployed automatically — no more manual zip do
    - Output directory: leave as root (`.`)
    - Deploy
 
-4. **Point your domain** at the Vercel project (Vercel → Project → Settings → Domains),
-   replacing the placeholder `dewayu-utama-land.vercel.app` in `data/site.js` with your
-   real domain once you have one.
+4. **Point your domain** at the Vercel project (Vercel → Project → Settings → Domains) and
+   set it in `data/site.js`. ✅ Done — `legacylandbali.com` is live and set as `domain` in
+   `data/site.js`.
 
 ## After setup — the new workflow
 
