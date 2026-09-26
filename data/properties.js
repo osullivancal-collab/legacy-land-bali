@@ -244,8 +244,6 @@ module.exports = [
   // ----------------------------------------------------------
   {
     slug: "asri-jewel-villas",
-    // The original landing page — kept exactly as-is; the portfolio links out to it.
-    vercelUrl: "https://asri-jewel-villas.vercel.app",
     type: "villa",
     status: "Urgent Sale",
     featured: true,
@@ -287,6 +285,19 @@ module.exports = [
       { title: "Freehold SHM Title", text: "Complete legal documentation with Freehold (SHM) — the strongest land ownership title available in Indonesia." },
       { title: "Professional Office", text: "Dedicated management office space on-site, supporting full operational control of the resort from the property itself." },
     ],
+    projectFacts: {
+      heading: "A fully operational single-title estate",
+      text: "Everything needed to run a boutique resort from day one, under one Freehold (SHM) title.",
+      facts: [
+        { place: "Location", time: "Ungasan, Badung" },
+        { place: "Land Area", time: "3,500 m²" },
+        { place: "Building Area", time: "2,870 m²" },
+        { place: "Title", time: "Freehold (SHM)" },
+        { place: "Private Villas", time: "7" },
+        { place: "Pools", time: "7" },
+        { place: "Power", time: "200 KVA + backup generator" },
+      ],
+    },
     investment: {
       heading: "The investment case",
       intro: "Why savvy buyers are looking at Ungasan:",
